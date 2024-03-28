@@ -24,10 +24,12 @@ def load_mnist_data():
         X = X.reshape(X.shape[0], -1)
         # normalize
         X = X / 255.0
+
         # only keep {0, 1, 2}
         mask = (y == 0) | (y == 1) | (y == 2)
         X = X[mask]
         y = y[mask]
+
         data_dict[split]['X'] = X
         data_dict[split]['y'] = y
     return data_dict['train']['X'], data_dict['train']['y'], data_dict['test']['X'], data_dict['test']['y'] 

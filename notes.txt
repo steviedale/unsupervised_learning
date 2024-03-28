@@ -1,0 +1,2 @@
+Improvements (if we have time):
+- try filtering out components using kirtosis
