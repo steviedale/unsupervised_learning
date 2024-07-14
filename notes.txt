@@ -1,2 +1,40 @@
-Improvements (if we have time):
-- try filtering out components using kirtosis
+Datasets and Hypotheses: 
+Good job providing what are the two datasets. However, you didn't explain why these two datasets are interesting 
+from a DR perspective (i.e. is it going to be hard to reduce the number of features? What features do you think 
+will be reduced). However, good job hypothesizing on what are challenges and results expected for each of the 
+subsequent steps. However, there was no discussion on the effect of clustering on NN (reduction in time or 
+increase in accuracy) 
+
+Clustering: 
+Good job presenting how the number of clusters is optimized for both KMeans 
+and EM and what metric was used to determine the number of clusters. However, this section was missing the 
+analysis of the results after selecting the number of clusters. Also, good job identifying improvements in 
+methods for clustering. However, since there were no plots for the clustering, the discussion regarding the shape 
+of the clusters is missed. Lastly, you could have compared the clustering results with the true label to evaluate 
+the accuracy of the clustering. This is critical to notice any limitation in using clustering as a standalone tool. 
+
+DR: 
+Good job showing how you picked the # of components for all DR algos using objective evidence. However, there 
+was no analysis/results on how the projections look (i.e., 2D or 3D plot of the new projection). Also, the 
+projection plot is critical to understanding how the algorithms are converting the data into different dimensions. 
+
+DR+Clustering: 
+Good job showing how you selected the number of new clusters you got after DR, and how the results 
+are interesting/different from step 1. However, there was no justification/rationale for why PCA was selected as the 
+linear DR method compared to ICA for example. Also, similar to step 1, you could have compared the clustering 
+results with the true label to evaluate the accuracy of the clustering or if the number of clusters was the same 
+after DR, and what the clusters look like, i.e. radial, diagonal, etc. 
+
+DR+NN: 
+Good comparison of the performance 
+before and after DR. However, the analysis was very slim and there was no comparison in terms of wall clock time. 
+
+Clustering+NN: 
+Similar to the section above, good comparison of the performance/wall clock time before and after 
+clustering, as well as comparing the results with the baseline model. 
+
+Following Directions:
+Good job keeping the report under 8 pages. 
+
+Good Luck with the rest of the semester!
+- Daniel Joshua Boros
