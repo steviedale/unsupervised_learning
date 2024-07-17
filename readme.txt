@@ -19,6 +19,7 @@ Step 1:
         - run step_1_plot_metrics.ipynb
         - run step_1_plot_metrics_all_datasets_kmeans.ipynb
         - run step_1_plot_metrics_all_datasets_gmm.ipynb
+        - run step_1_plot_cluster_shape_mnist.ipynb
 
     - To create table:
         - run step_1_get_tables.ipynb
